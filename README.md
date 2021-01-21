@@ -14,7 +14,7 @@ Masks:
 ![Mask1](https://github.com/Ars235/Determining_HOCB/blob/master/data/masks/mask-id1.jpg) ![Mask2](https://github.com/Ars235/Determining_HOCB/blob/master/data/masks/mask-id2.jpg)  
 
 There are several types of pictures we discovered:  
-![DataTypes](https://github.com/Ars235/Determining_HOCB/blob/master/assets/data_types)  
+![DataTypes](https://github.com/Ars235/Determining_HOCB/blob/master/assets/data_types/data_types.png)  
 As we see, some pictures don't have any target value. There are some pictures, when cameras are covered with raindrops.  
 Also there are some types of clouds (top right corner), that are hard to extract some information from them.  
 
