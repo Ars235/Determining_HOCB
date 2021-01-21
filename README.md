@@ -11,7 +11,7 @@ There is some systematic component in this displacement in angle: (1) the camera
 In parallel with these images (for which UTC time is known exactly), there are model data for the height of the cloud base (HOCB). This is global data (a grid of data around the globe, with a period of 1 hour), from which it is possible to take HOCB for the final target by coordinates and time.  
 
 Masks:  
-![Mask1](https://github.com/Ars235/Determining_HOCB/blob/master/data/masks/mask-id1.jpg) ![Mask2](https://github.com/Ars235/Determining_HOCB/blob/master/data/masks/mask-id1.jpg)  
+![Mask1](https://github.com/Ars235/Determining_HOCB/blob/master/data/masks/mask-id1.jpg) ![Mask2](https://github.com/Ars235/Determining_HOCB/blob/master/data/masks/mask-id2.jpg)  
 
 There are several types of pictures we discovered:  
 ![DataTypes](https://github.com/Ars235/Determining_HOCB/blob/master/assets/data_types)  
@@ -19,7 +19,7 @@ As we see, some pictures don't have any target value. There are some pictures, w
 Also there are some types of clouds (top right corner), that are hard to extract some information from them.  
 
 #### Proposed solution
-We used pretrained [SuperGlue model](https://github.com/magicleap/SuperGluePretrainedNetwork) to extract $\delta x, \delta y$ and *confidence* $p$ between key points of two images (each training sample is a pair of images). The number of detected key points may vary from sample to sample, so we chose 15 key points with the highest $p$ value, samples that had less than 15, we discarded. Having confidences between key points allowed us to plot the distrtibution of confidence, extract statistics from it (median value, percentiles, variance), and hence, allowed SuperGlue to compute some features, such as:  
+We used pretrained [SuperGlue model](https://github.com/magicleap/SuperGluePretrainedNetwork) to extract dx, dy and *confidence* *p* between key points of two images (each training sample is a pair of images). The number of detected key points may vary from sample to sample, so we chose 15 key points with the highest *p* value, samples that had less than 15, we discarded. Having confidences between key points allowed us to plot the distrtibution of confidence, extract statistics from it (median value, percentiles, variance), and hence, allowed SuperGlue to compute some features, such as:  
 1) cosines and sines of spherical angles (8 features)  
 2) pixel coordinates  (4 features)
 3) modules of pixel difference along the x, y axes (2 features) 
