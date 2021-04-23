@@ -7,12 +7,14 @@ Data: pictures taken by two cameras to the zenith at the same time.
 Images:  
 ![Image1](https://github.com/Ars235/Determining_HOCB/blob/master/assets/data_examples/img-2016-03-21T08-52-45devID1.jpg)|![Image2](https://github.com/Ars235/Determining_HOCB/blob/master/assets/data_examples/img-2016-03-21T08-52-45devID2.jpg)  
 :------------------:|:----------------:  
+
 If you look closely, you can see clouds from different angles.  
 There is some systematic component in this displacement in angle: (1) the cameras are not absolutely parallel looking at the zenith; (2) the cameras are not absolutely precisely oriented in the same direction. But this systematic component is constant throughout the experiment.  
 In parallel with these images (for which UTC time is known exactly), there are model data for the height of the cloud base (HOCB). This is global data (a grid of data around the globe, with a period of 1 hour), from which it is possible to take HOCB for the final target by coordinates and time.  
 
 Masks:  
-![Mask1](https://github.com/Ars235/Determining_HOCB/blob/master/data/masks/mask-id1.jpg) ![Mask2](https://github.com/Ars235/Determining_HOCB/blob/master/data/masks/mask-id2.jpg)  
+![Mask1](https://github.com/Ars235/Determining_HOCB/blob/master/data/masks/mask-id1.jpg)|![Mask2](https://github.com/Ars235/Determining_HOCB/blob/master/data/masks/mask-id2.jpg)
+:-------:|:------:  
 
 There are several types of pictures we discovered:  
 ![DataTypes](https://github.com/Ars235/Determining_HOCB/blob/master/assets/data_types/data_types.png)  
